@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "HS100B Evaluation Board"
-Date "2021-04-05"
-Rev "1"
+Date "2021-04-14"
+Rev "2"
 Comp "Chris Keller"
 Comment1 ""
 Comment2 ""
@@ -1062,20 +1062,6 @@ F 3 "" H 1350 3600 50  0001 C CNN
 	1    1350 3600
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:USB_A JP2
-U 1 1 6057963A
-P 1350 2850
-F 0 "JP2" H 1407 3317 50  0000 C CNN
-F 1 "USB_A" H 1407 3226 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 1500 2800 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/276/0473460001_IO_CONNECTORS-229243.pdf" H 1500 2800 50  0001 C CNN
-F 4 "0.95" H 1407 3417 50  0001 C CNN "Price"
-F 5 "538-47346-0001" H 1407 3417 50  0001 C CNN "Vendor Part #"
-F 6 "Mouser" H 1407 3417 50  0001 C CNN "Vendor"
-	1    1350 2850
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1350 3250 1350 3600
 Wire Wire Line
@@ -1173,4 +1159,20 @@ F 3 "" H 6750 3200 50  0001 C CNN
 $EndComp
 NoConn ~ 4050 4150
 NoConn ~ 4050 4350
+$Comp
+L Connector:USB_B_Micro JP2
+U 1 1 6078D129
+P 1350 2850
+F 0 "JP2" H 1407 3317 50  0000 C CNN
+F 1 "USB_B_Micro" H 1407 3226 50  0000 C CNN
+F 2 "CUI:UJ2-MIBH-4-SMT" H 1500 2800 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/670/uj2_mibh_4_smt-1313358.pdf" H 1500 2800 50  0001 C CNN
+	1    1350 2850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1650 3050
+Text Label 1750 2850 0    50   ~ 0
+USB+
+Text Label 1750 2950 0    50   ~ 0
+USB-
 $EndSCHEMATC
