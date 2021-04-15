@@ -926,7 +926,7 @@ Wire Wire Line
 Wire Wire Line
 	2500 2950 2650 2950
 Wire Wire Line
-	1650 2650 1750 2650
+	1650 2650 1700 2650
 Wire Wire Line
 	1850 3150 1850 2950
 Wire Wire Line
@@ -1084,8 +1084,6 @@ Wire Wire Line
 Wire Wire Line
 	2050 2650 2150 2650
 Wire Wire Line
-	2150 2650 2150 2500
-Wire Wire Line
 	8900 5150 8700 5150
 Wire Wire Line
 	8700 6200 8900 6200
@@ -1102,8 +1100,6 @@ Wire Wire Line
 Wire Wire Line
 	2750 5300 2750 5800
 Wire Wire Line
-	1350 3250 1350 3550
-Wire Wire Line
 	1250 3250 1250 3300
 Wire Wire Line
 	1250 3300 1200 3300
@@ -1116,8 +1112,6 @@ Wire Wire Line
 Wire Wire Line
 	5050 5450 5150 5450
 Wire Wire Line
-	4950 5450 4950 5600
-Wire Wire Line
 	5750 4450 7000 4450
 Wire Wire Line
 	5750 3700 6100 3700
@@ -1129,8 +1123,6 @@ Wire Wire Line
 	6550 4550 6650 4550
 Wire Wire Line
 	6100 5100 6100 3700
-Wire Wire Line
-	7200 2300 7200 2450
 Wire Wire Line
 	5900 2600 5900 3400
 Wire Wire Line
@@ -1180,44 +1172,45 @@ NoConn ~ 1650 3050
 $Comp
 L Connector:TestPoint_Flag TP2
 U 1 1 607D02CD
-P 7200 2450
-F 0 "TP2" V 7354 2590 50  0000 L CNN
-F 1 "5V" V 7263 2590 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7400 2450 50  0001 C CNN
-F 3 "-" H 7400 2450 50  0001 C CNN
-F 4 "0" H 7597 2598 50  0001 C CNN "Price"
-F 5 "-" H 7597 2598 50  0001 C CNN "Vendor Part #"
-F 6 "-" H 7597 2598 50  0001 C CNN "Vendor"
-	1    7200 2450
-	0    -1   -1   0   
+P 1700 2300
+F 0 "TP2" V 1854 2440 50  0000 L CNN
+F 1 "5V" V 1763 2440 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1900 2300 50  0001 C CNN
+F 3 "-" H 1900 2300 50  0001 C CNN
+F 4 "0" H 2097 2448 50  0001 C CNN "Price"
+F 5 "-" H 2097 2448 50  0001 C CNN "Vendor Part #"
+F 6 "-" H 2097 2448 50  0001 C CNN "Vendor"
+	1    1700 2300
+	0    1    -1   0   
 $EndComp
-Connection ~ 2150 2500
-Wire Wire Line
-	2150 2500 2150 2400
 $Comp
 L Connector:TestPoint_Flag TP1
 U 1 1 607D1285
-P 4950 5600
-F 0 "TP1" H 5210 5694 50  0000 L CNN
-F 1 "GND" H 5210 5603 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 5150 5600 50  0001 C CNN
-F 3 "-" H 5150 5600 50  0001 C CNN
-F 4 "0" H 5347 5748 50  0001 C CNN "Price"
-F 5 "-" H 5347 5748 50  0001 C CNN "Vendor Part #"
-F 6 "-" H 5347 5748 50  0001 C CNN "Vendor"
-	1    4950 5600
+P 1350 3550
+F 0 "TP1" H 1610 3644 50  0000 L CNN
+F 1 "GND" H 1610 3553 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 1550 3550 50  0001 C CNN
+F 3 "-" H 1550 3550 50  0001 C CNN
+F 4 "0" H 1747 3698 50  0001 C CNN "Price"
+F 5 "-" H 1747 3698 50  0001 C CNN "Vendor Part #"
+F 6 "-" H 1747 3698 50  0001 C CNN "Vendor"
+	1    1350 3550
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2150 2400 2150 2650
+Wire Wire Line
+	1350 3250 1350 3550
 Connection ~ 1350 3550
 Wire Wire Line
 	1350 3550 1350 3600
-Connection ~ 4950 5600
 Wire Wire Line
-	4950 5600 4950 5650
-Connection ~ 7200 2550
+	1700 2300 1700 2650
 Wire Wire Line
-	7200 2550 7200 2600
-Connection ~ 7200 2450
+	4950 5450 4950 5650
 Wire Wire Line
-	7200 2450 7200 2550
+	7200 2300 7200 2600
+Connection ~ 1700 2650
+Wire Wire Line
+	1700 2650 1750 2650
 $EndSCHEMATC
