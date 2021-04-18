@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "HS100B Evaluation Board"
-Date "2021-04-14"
+Date "2021-04-18"
 Rev "2"
 Comp "Chris Keller"
 Comment1 "Licensed under Creative Commons CC-BY-4.0"
@@ -721,7 +721,7 @@ U 1 1 605C75C7
 P 9100 5150
 F 0 "SW1" H 9100 5435 50  0000 C CNN
 F 1 "MUTE_REC" H 9100 5344 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP" H 9100 5350 50  0001 C CNN
+F 2 "Omron:SW_SPST_Omron_B3FS-100xP" H 9100 5350 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/307/omron_B3FS-1189765.pdf" H 9100 5350 50  0001 C CNN
 F 4 "0.58" H 9100 5535 50  0001 C CNN "Price"
 F 5 "653-B3FS-1002P" H 9100 5535 50  0001 C CNN "Vendor Part #"
@@ -735,7 +735,7 @@ U 1 1 605CBF8A
 P 9100 5500
 F 0 "SW2" H 9100 5785 50  0000 C CNN
 F 1 "MUTE_PLAY" H 9100 5694 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP" H 9100 5700 50  0001 C CNN
+F 2 "Omron:SW_SPST_Omron_B3FS-100xP" H 9100 5700 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/307/omron_B3FS-1189765.pdf" H 9100 5700 50  0001 C CNN
 F 4 "0.58" H 9100 5885 50  0001 C CNN "Price"
 F 5 "653-B3FS-1002P" H 9100 5885 50  0001 C CNN "Vendor Part #"
@@ -749,7 +749,7 @@ U 1 1 605CC73A
 P 9100 5850
 F 0 "SW3" H 9100 6135 50  0000 C CNN
 F 1 "VOL_DN" H 9100 6044 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP" H 9100 6050 50  0001 C CNN
+F 2 "Omron:SW_SPST_Omron_B3FS-100xP" H 9100 6050 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/307/omron_B3FS-1189765.pdf" H 9100 6050 50  0001 C CNN
 F 4 "0.58" H 9100 6235 50  0001 C CNN "Price"
 F 5 "653-B3FS-1002P" H 9100 6235 50  0001 C CNN "Vendor Part #"
@@ -763,7 +763,7 @@ U 1 1 605CD1F5
 P 9100 6200
 F 0 "SW4" H 9100 6485 50  0000 C CNN
 F 1 "VOL_UP" H 9100 6394 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP" H 9100 6400 50  0001 C CNN
+F 2 "Omron:SW_SPST_Omron_B3FS-100xP" H 9100 6400 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/307/omron_B3FS-1189765.pdf" H 9100 6400 50  0001 C CNN
 F 4 "0.58" H 9100 6585 50  0001 C CNN "Price"
 F 5 "653-B3FS-1002P" H 9100 6585 50  0001 C CNN "Vendor Part #"
@@ -1084,6 +1084,8 @@ Wire Wire Line
 Wire Wire Line
 	2050 2650 2150 2650
 Wire Wire Line
+	2150 2650 2150 2400
+Wire Wire Line
 	8900 5150 8700 5150
 Wire Wire Line
 	8700 6200 8900 6200
@@ -1100,6 +1102,8 @@ Wire Wire Line
 Wire Wire Line
 	2750 5300 2750 5800
 Wire Wire Line
+	1350 3250 1350 3550
+Wire Wire Line
 	1250 3250 1250 3300
 Wire Wire Line
 	1250 3300 1200 3300
@@ -1112,6 +1116,8 @@ Wire Wire Line
 Wire Wire Line
 	5050 5450 5150 5450
 Wire Wire Line
+	4950 5450 4950 5650
+Wire Wire Line
 	5750 4450 7000 4450
 Wire Wire Line
 	5750 3700 6100 3700
@@ -1123,6 +1129,8 @@ Wire Wire Line
 	6550 4550 6650 4550
 Wire Wire Line
 	6100 5100 6100 3700
+Wire Wire Line
+	7200 2300 7200 2600
 Wire Wire Line
 	5900 2600 5900 3400
 Wire Wire Line
@@ -1171,21 +1179,26 @@ NoConn ~ 4050 4350
 NoConn ~ 1650 3050
 $Comp
 L Connector:TestPoint_Flag TP2
-U 1 1 607D02CD
-P 1700 2300
-F 0 "TP2" V 1854 2440 50  0000 L CNN
-F 1 "5V" V 1763 2440 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1900 2300 50  0001 C CNN
-F 3 "-" H 1900 2300 50  0001 C CNN
-F 4 "0" H 2097 2448 50  0001 C CNN "Price"
-F 5 "-" H 2097 2448 50  0001 C CNN "Vendor Part #"
-F 6 "-" H 2097 2448 50  0001 C CNN "Vendor"
-	1    1700 2300
-	0    1    -1   0   
+U 1 1 607D2415
+P 1700 2250
+F 0 "TP2" H 1808 2527 50  0000 C CNN
+F 1 "5V" H 1808 2436 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1900 2250 50  0001 C CNN
+F 3 "-" H 1900 2250 50  0001 C CNN
+F 4 "0" H 2097 2398 50  0001 C CNN "Price"
+F 5 "-" H 2097 2398 50  0001 C CNN "Vendor Part #"
+F 6 "-" H 2097 2398 50  0001 C CNN "Vendor"
+	1    1700 2250
+	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1700 2250 1700 2650
+Connection ~ 1700 2650
+Wire Wire Line
+	1700 2650 1750 2650
 $Comp
 L Connector:TestPoint_Flag TP1
-U 1 1 607D1285
+U 1 1 607DDFB1
 P 1350 3550
 F 0 "TP1" H 1610 3644 50  0000 L CNN
 F 1 "GND" H 1610 3553 50  0000 L CNN
@@ -1197,20 +1210,7 @@ F 6 "-" H 1747 3698 50  0001 C CNN "Vendor"
 	1    1350 3550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2150 2400 2150 2650
-Wire Wire Line
-	1350 3250 1350 3550
 Connection ~ 1350 3550
 Wire Wire Line
 	1350 3550 1350 3600
-Wire Wire Line
-	1700 2300 1700 2650
-Wire Wire Line
-	4950 5450 4950 5650
-Wire Wire Line
-	7200 2300 7200 2600
-Connection ~ 1700 2650
-Wire Wire Line
-	1700 2650 1750 2650
 $EndSCHEMATC
