@@ -295,68 +295,26 @@ F 6 "Mouser" H 8495 2450 50  0001 C CNN "Vendor"
 	0    1    1    0   
 $EndComp
 $Comp
-L Jumper:SolderJumper_3_Open JP1
-U 1 1 6063CF0E
-P 2000 5000
-F 0 "JP1" V 1954 5068 50  0000 L CNN
-F 1 "PWRSEL" V 2045 5068 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2000 5000 50  0001 C CNN
-F 3 "https://www.amphenol-icc.com/media/wysiwyg/files/documentation/datasheet/boardwiretoboard/bwb_econostik_254headers.pdf" H 2000 5000 50  0001 C CNN
-F 4 "0.1" H 1954 5168 50  0001 C CNN "Price"
-F 5 "649-1012937890301BLF" H 1954 5168 50  0001 C CNN "Vendor Part #"
-F 6 "Mouser" H 1954 5168 50  0001 C CNN "Vendor"
-	1    2000 5000
-	0    1    1    0   
-$EndComp
-$Comp
 L power:+3V3 #PWR05
 U 1 1 6064094B
-P 2750 4700
-F 0 "#PWR05" H 2750 4550 50  0001 C CNN
-F 1 "+3V3" H 2765 4873 50  0000 C CNN
-F 2 "" H 2750 4700 50  0001 C CNN
-F 3 "" H 2750 4700 50  0001 C CNN
-	1    2750 4700
+P 2300 4700
+F 0 "#PWR05" H 2300 4550 50  0001 C CNN
+F 1 "+3V3" H 2315 4873 50  0000 C CNN
+F 2 "" H 2300 4700 50  0001 C CNN
+F 3 "" H 2300 4700 50  0001 C CNN
+	1    2300 4700
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR04
 U 1 1 60642C2C
-P 2550 6350
-F 0 "#PWR04" H 2550 6100 50  0001 C CNN
-F 1 "GND" H 2555 6177 50  0001 C CNN
-F 2 "" H 2550 6350 50  0001 C CNN
-F 3 "" H 2550 6350 50  0001 C CNN
-	1    2550 6350
+P 2300 6350
+F 0 "#PWR04" H 2300 6100 50  0001 C CNN
+F 1 "GND" H 2305 6177 50  0001 C CNN
+F 2 "" H 2300 6350 50  0001 C CNN
+F 3 "" H 2300 6350 50  0001 C CNN
+	1    2300 6350
 	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_3_Open JP3
-U 1 1 60645210
-P 2000 5500
-F 0 "JP3" V 1954 5568 50  0000 L CNN
-F 1 "MODE" V 2045 5568 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2000 5500 50  0001 C CNN
-F 3 "https://www.amphenol-icc.com/media/wysiwyg/files/documentation/datasheet/boardwiretoboard/bwb_econostik_254headers.pdf" H 2000 5500 50  0001 C CNN
-F 4 "0.1" H 1954 5668 50  0001 C CNN "Price"
-F 5 "649-1012937890301BLF" H 1954 5668 50  0001 C CNN "Vendor Part #"
-F 6 "Mouser" H 1954 5668 50  0001 C CNN "Vendor"
-	1    2000 5500
-	0    1    1    0   
-$EndComp
-$Comp
-L Jumper:SolderJumper_3_Open JP4
-U 1 1 6064583B
-P 2000 6000
-F 0 "JP4" V 1954 6068 50  0000 L CNN
-F 1 "MSEL" V 2045 6068 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2000 6000 50  0001 C CNN
-F 3 "https://www.amphenol-icc.com/media/wysiwyg/files/documentation/datasheet/boardwiretoboard/bwb_econostik_254headers.pdf" H 2000 6000 50  0001 C CNN
-F 4 "0.1" H 1954 6168 50  0001 C CNN "Price"
-F 5 "649-1012937890301BLF" H 1954 6168 50  0001 C CNN "Vendor Part #"
-F 6 "Mouser" H 1954 6168 50  0001 C CNN "Vendor"
-	1    2000 6000
-	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small_US R4
@@ -855,13 +813,13 @@ Text Label 5250 2750 1    50   ~ 0
 PWRSEL
 Text Label 5350 2750 1    50   ~ 0
 MODE
-Text Label 1600 5000 2    50   ~ 0
+Text Label 1700 5600 0    50   ~ 0
 PWRSEL
-Text Label 1550 5500 2    50   ~ 0
+Text Label 1700 5700 0    50   ~ 0
 MODE
 Text Label 5150 2750 1    50   ~ 0
 MSEL
-Text Label 1550 6000 2    50   ~ 0
+Text Label 1700 5800 0    50   ~ 0
 MSEL
 Text Label 4050 4750 2    50   ~ 0
 LEDO
@@ -980,31 +938,7 @@ Wire Wire Line
 Wire Wire Line
 	9400 1950 9400 2350
 Wire Wire Line
-	1600 5000 1850 5000
-Wire Wire Line
-	2000 4800 2750 4800
-Wire Wire Line
-	2750 4800 2750 4700
-Wire Wire Line
-	2000 5300 2750 5300
-Wire Wire Line
-	2750 5300 2750 4800
-Wire Wire Line
-	2000 5800 2750 5800
-Wire Wire Line
-	2000 6200 2550 6200
-Wire Wire Line
-	2550 6200 2550 6350
-Wire Wire Line
-	2000 5700 2550 5700
-Wire Wire Line
-	2550 5700 2550 6200
-Wire Wire Line
-	2000 5200 2550 5200
-Wire Wire Line
-	1550 5500 1850 5500
-Wire Wire Line
-	1550 6000 1850 6000
+	2300 4800 2300 4700
 Wire Wire Line
 	7200 2200 7200 2300
 Wire Wire Line
@@ -1094,14 +1028,6 @@ Wire Wire Line
 Wire Wire Line
 	8900 5500 8700 5500
 Wire Wire Line
-	2550 4700 2550 5200
-Wire Wire Line
-	2550 5200 2550 5700
-Wire Wire Line
-	2750 5800 2750 6350
-Wire Wire Line
-	2750 5300 2750 5800
-Wire Wire Line
 	1350 3250 1350 3550
 Wire Wire Line
 	1250 3250 1250 3300
@@ -1151,10 +1077,6 @@ Connection ~ 9400 1950
 Connection ~ 3600 4250
 Connection ~ 9400 6200
 Connection ~ 9400 2350
-Connection ~ 2750 4800
-Connection ~ 2750 5300
-Connection ~ 2550 6200
-Connection ~ 2550 5700
 Connection ~ 6750 2600
 Connection ~ 6350 2600
 Connection ~ 6750 3000
@@ -1162,8 +1084,6 @@ Connection ~ 6350 3000
 Connection ~ 7200 2600
 Connection ~ 7200 2300
 Connection ~ 8850 3150
-Connection ~ 2550 5200
-Connection ~ 2750 5800
 Connection ~ 4850 5450
 Connection ~ 4950 5450
 Connection ~ 5050 5450
@@ -1213,4 +1133,83 @@ $EndComp
 Connection ~ 1350 3550
 Wire Wire Line
 	1350 3550 1350 3600
+$Comp
+L Switch:SW_DIP_x03 SW5
+U 1 1 6081E826
+P 2350 5250
+F 0 "SW5" V 2350 5120 50  0000 R CNN
+F 1 "SW_DIP_x03" V 2305 5120 50  0001 R CNN
+F 2 "Diptronics:DMR" H 2350 5250 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/910/374_DM-1544377.pdf" H 2350 5250 50  0001 C CNN
+F 4 "1.72" H 2350 5250 50  0001 C CNN "Price"
+F 5 "Mouser" H 2350 5250 50  0001 C CNN "Vendor"
+F 6 "113-DMR03V" H 2350 5250 50  0001 C CNN "Vendor Part #"
+	1    2350 5250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2150 4950 2150 4800
+Wire Wire Line
+	2150 4800 2250 4800
+Wire Wire Line
+	2250 4950 2250 4800
+Connection ~ 2250 4800
+Wire Wire Line
+	2250 4800 2300 4800
+Wire Wire Line
+	2350 4950 2350 4800
+Wire Wire Line
+	2350 4800 2300 4800
+Connection ~ 2300 4800
+$Comp
+L Device:R_Pack04 RN1
+U 1 1 6083D634
+P 2350 6050
+F 0 "RN1" H 2538 6096 50  0000 L CNN
+F 1 "10KΩ" H 2538 6005 50  0000 L CNN
+F 2 "Resistor_SMD:R_Array_Concave_4x0402" V 2625 6050 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/CAT10-1954944.pdf" H 2350 6050 50  0001 C CNN
+F 4 "0.10" H 2350 6050 50  0001 C CNN "Price"
+F 5 "Mouser" H 2350 6050 50  0001 C CNN "Vendor"
+F 6 "652-CAT10A-103J2LF" H 2350 6050 50  0001 C CNN "Vendor Part #"
+	1    2350 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 6250 2150 6350
+Wire Wire Line
+	2150 6350 2250 6350
+Wire Wire Line
+	2250 6250 2250 6350
+Connection ~ 2250 6350
+Wire Wire Line
+	2250 6350 2300 6350
+Wire Wire Line
+	2350 6250 2350 6350
+Wire Wire Line
+	2350 6350 2300 6350
+Connection ~ 2300 6350
+NoConn ~ 2450 6250
+NoConn ~ 2450 5850
+Wire Wire Line
+	2150 5550 2150 5600
+Wire Wire Line
+	2250 5550 2250 5700
+Wire Wire Line
+	2350 5550 2350 5800
+Connection ~ 2150 5600
+Wire Wire Line
+	2150 5600 2150 5850
+Wire Wire Line
+	1700 5700 2250 5700
+Connection ~ 2250 5700
+Wire Wire Line
+	2250 5700 2250 5850
+Wire Wire Line
+	1700 5800 2350 5800
+Connection ~ 2350 5800
+Wire Wire Line
+	2350 5800 2350 5850
+Wire Wire Line
+	1700 5600 2150 5600
 $EndSCHEMATC
