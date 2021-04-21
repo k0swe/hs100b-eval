@@ -411,29 +411,15 @@ $EndComp
 $Comp
 L Device:CP C10
 U 1 1 606A39C6
-P 6550 4600
-F 0 "C10" V 6805 4600 50  0000 C CNN
-F 1 "470μF" V 6714 4600 50  0000 C CNN
-F 2 "Vishay:CAPPM7343X430N" H 6588 4450 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/427/293d-1763499.pdf" H 6550 4600 50  0001 C CNN
-F 4 "1.3" H 6805 4700 50  0001 C CNN "Price"
-F 5 "74-293D477X9010E2TE3" V 6550 4600 50  0001 C CNN "Vendor Part #"
-F 6 "Mouser" H 6805 4700 50  0001 C CNN "Vendor"
-	1    6550 4600
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:CP C11
-U 1 1 606A46F9
-P 6850 4700
-F 0 "C11" V 7100 4700 50  0000 C CNN
-F 1 "470μF" V 7000 4700 50  0000 C CNN
-F 2 "Vishay:CAPPM7343X430N" H 6888 4550 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/427/293d-1763499.pdf" H 6850 4700 50  0001 C CNN
-F 4 "1.3" H 7100 4800 50  0001 C CNN "Price"
-F 5 "74-293D477X9010E2TE3" V 6850 4700 50  0001 C CNN "Vendor Part #"
-F 6 "Mouser" H 7100 4800 50  0001 C CNN "Vendor"
-	1    6850 4700
+P 6550 4700
+F 0 "C10" V 6805 4700 50  0000 C CNN
+F 1 "470μF" V 6714 4700 50  0000 C CNN
+F 2 "Vishay:CAPPM7343X430N" H 6588 4550 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/293d-1763499.pdf" H 6550 4700 50  0001 C CNN
+F 4 "1.3" H 6805 4800 50  0001 C CNN "Price"
+F 5 "74-293D477X9010E2TE3" V 6550 4700 50  0001 C CNN "Vendor Part #"
+F 6 "Mouser" H 6805 4800 50  0001 C CNN "Vendor"
+	1    6550 4700
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -823,10 +809,8 @@ Text Label 7400 5100 0    50   ~ 0
 MIC_IN
 Text Label 7400 5200 0    50   ~ 0
 MIC_BIAS
-Text Label 7400 4600 0    50   ~ 0
-AUDIO_L
 Text Label 7400 4700 0    50   ~ 0
-AUDIO_R
+AUDIO_L
 Text Label 8650 4350 2    50   ~ 0
 MIC_IN
 Text Label 8650 4450 2    50   ~ 0
@@ -924,9 +908,7 @@ Wire Wire Line
 Wire Wire Line
 	4300 1200 4550 1200
 Wire Wire Line
-	5700 4600 6400 4600
-Wire Wire Line
-	5700 4700 6700 4700
+	5700 4700 6400 4700
 Wire Wire Line
 	8650 3950 8900 3950
 Wire Wire Line
@@ -946,9 +928,7 @@ Wire Wire Line
 Wire Wire Line
 	8900 4550 8800 4550
 Wire Wire Line
-	6700 4600 7400 4600
-Wire Wire Line
-	7000 4700 7400 4700
+	6700 4700 7400 4700
 Wire Wire Line
 	7150 5100 7400 5100
 Wire Wire Line
@@ -1203,4 +1183,24 @@ Text Label 5700 4150 0    50   ~ 0
 AVDD1
 Text Label 5700 4050 0    50   ~ 0
 AVDD2
+Wire Wire Line
+	7000 4600 7400 4600
+Wire Wire Line
+	5700 4600 6700 4600
+Text Label 7400 4600 0    50   ~ 0
+AUDIO_R
+$Comp
+L Device:CP C11
+U 1 1 606A46F9
+P 6850 4600
+F 0 "C11" V 7100 4600 50  0000 C CNN
+F 1 "470μF" V 7000 4600 50  0000 C CNN
+F 2 "Vishay:CAPPM7343X430N" H 6888 4450 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/293d-1763499.pdf" H 6850 4600 50  0001 C CNN
+F 4 "1.3" H 7100 4700 50  0001 C CNN "Price"
+F 5 "74-293D477X9010E2TE3" V 6850 4600 50  0001 C CNN "Vendor Part #"
+F 6 "Mouser" H 7100 4700 50  0001 C CNN "Vendor"
+	1    6850 4600
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
