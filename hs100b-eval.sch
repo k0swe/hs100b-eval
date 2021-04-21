@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "HS100B Evaluation Board"
 Date "2021-04-21"
-Rev "3"
+Rev "4"
 Comp "Chris Keller"
 Comment1 "Licensed under Creative Commons CC-BY-4.0"
 Comment2 ""
@@ -1100,11 +1100,11 @@ U 1 1 6081E826
 P 2050 5300
 F 0 "SW5" V 2050 5170 50  0000 R CNN
 F 1 "SW_DIP_x03" V 2005 5170 50  0001 R CNN
-F 2 "Diptronics:DMR" H 2050 5300 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/910/374_DM-1544377.pdf" H 2050 5300 50  0001 C CNN
-F 4 "1.72" H 2050 5300 50  0001 C CNN "Price"
+F 2 "Wurth:416131160803" H 2050 5300 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/445/416131160803-1717247.pdf" H 2050 5300 50  0001 C CNN
+F 4 "3.31" H 2050 5300 50  0001 C CNN "Price"
 F 5 "Mouser" H 2050 5300 50  0001 C CNN "Vendor"
-F 6 "113-DMR03V" H 2050 5300 50  0001 C CNN "Vendor Part #"
+F 6 "710-416131160803" H 2050 5300 50  0001 C CNN "Vendor Part #"
 	1    2050 5300
 	0    -1   -1   0   
 $EndComp
