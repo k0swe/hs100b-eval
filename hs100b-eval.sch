@@ -1203,4 +1203,15 @@ F 6 "Mouser" H 7100 4700 50  0001 C CNN "Vendor"
 	1    6850 4600
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Graphic:Logo_Open_Hardware_Small LOGO1
+U 1 1 6083E287
+P 10900 6850
+F 0 "LOGO1" H 10900 7125 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 10900 6625 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo2_9.8x8mm_SilkScreen" H 10900 6850 50  0001 C CNN
+F 3 "~" H 10900 6850 50  0001 C CNN
+	1    10900 6850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
